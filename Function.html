@@ -1,0 +1,69 @@
+<html lang="en-US">
+<head>
+    <title>Home</title>  
+	<style type='text/css'>
+		.btnStyle {
+			with:200px;
+			height:40px;
+		}
+		.btnSave {
+			background-color:green;
+		}
+		td{
+			padding:10px;
+		}
+	</style>
+	<script type='text/javascript'>
+		function ShowMessage(){		
+			alert('This is a message');
+		}
+		function ShowMessageWithParam(string){
+			alert('This is a message from ' + meesage);
+		}		
+		function Add(number1,number2){
+			var sumOfTotal = number1 + number2;
+			alert(sumOfTotal);
+		}
+		function Sub(number1,number2){
+			var subOfTotal = number1 - number2;
+			alert(subOfTotal);
+		}
+	</script>
+</head>
+<body>
+<table style='margin:auto;with:400px;margin-top:100px;'>
+	<tr>
+		<td>
+			<input onclick='ShowMessageWithParam("submit")' class='btnStyle btnSave' type='button' value='Submit'></input>
+		</td>
+		<td>
+			<input onclick='ShowMessageWithParam("cancel")' class='btnStyle' type='button' value='Cancel'></input>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<input onclick='ShowMessage() ' class='btnStyle' type='button' value='Register'></input>
+		</td>
+		<td>
+			<input onclick='ShowMessage()' class='btnStyle' type='button' value='Login'></input>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<input onclick='ShowMessage()' class='btnStyle' type='button' value='Close'></input>
+		</td>
+		<td>
+			<input onclick='ShowMessage()' class='btnStyle' type='button' value='Open'></input>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<input onclick='Add(10,20)' class='btnStyle' type='button' value='Add'></input>
+		</td>
+		<td>
+			<input onclick='Sub(20,10)' class='btnStyle' type='button' value='Sub'></input>
+		</td>
+	</tr>
+</table>
+</body>
+</html>
